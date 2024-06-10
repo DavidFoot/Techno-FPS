@@ -57,7 +57,8 @@ public class FPSController : MonoBehaviour
         //m_camera.transform.Rotate(rotationY, 0, 0);
 
         m_camera.transform.position = transform.position;
-        m_camera.transform.rotation = transform.rotation;
+        //m_camera.transform.rotation = transform.rotation;
+        transform.rotation = m_camera.transform.rotation;
 
         //m_camera.transform.rotation = transform.rotation;
     }
