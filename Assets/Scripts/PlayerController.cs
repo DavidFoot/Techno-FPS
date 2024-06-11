@@ -55,7 +55,8 @@ public class PlayerController : MonoBehaviour
 
     private bool IsGrounded()
     {
-        if (Physics.Raycast(transform.position,Vector3.down,2f))
+        // Bigger Raycast 'cause of CharacterController Height
+        if (Physics.Raycast(transform.position,Vector3.down,1.1f))
         {
             return true;
         }
